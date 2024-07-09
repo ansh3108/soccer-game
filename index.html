@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div id="img-ball" onmousedown="grabBall()" onmouseup="releaseBall()"></div>
+    <div class="button-container"><button class="start-btn" onclick="initializeGame()">Start Game</button></div>
+    <div id="game-container" class="game-container">
+        <div class="game-body">
+            <div class="game-field">
+                <div class="field-left"></div>
+                <div class="field-center">
+                    <div class="center-circle"></div>
+                </div>
+                <div id="field-right" class="field-right">
+                    <div id="goal-post" class="goal-post"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
