@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    position: absolute;
+    left: calc((100vw - 150px) / 2);
+    top: 50px;
+}
+
+.start-btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 139, 139);
+    color: white;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: rgb(0, 150, 150);
+}
+
+.game-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.game-body {
+    display: flex;
+    width: 950px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 120, 33);
+    box-shadow: 0px 0px 20px rgb(150, 150, 150);
+}
+
+.game-field {
+    width: 90vw;
+    max-width: 900px;
+    min-width: 900px;
+    max-height: 600px;
+    min-height: 600px;
+    height: 600px;
+    background-color: rgb(9, 142, 33);
+    display: flex;
+}
+
+.field-left {
+    width: 200px;
+    border: 4px solid white;
+}
+
+.field-right {
+    border: 4px solid white;
+    width: 700px;
+    display: flex;
+    justify-content: right;
+}
+
+.field-center {
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-left: calc(300px / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.goal-post {
+    border: 3px solid white;
+    width: 40px;
+    height: 150px;
+    margin-top: calc((600px - 150px) / 2);
+}
+
+#img-ball {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url('Assets/Ball100.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1000;
+}
